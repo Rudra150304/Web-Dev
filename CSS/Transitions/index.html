@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Transitions</title>
+		<style>
+			.container {
+				background-color: aquamarine;
+				width: 50vw;
+				height: 40vh;
+			}
+			.box {
+				background-color: aqua;
+				width: 5vw;
+				height: 4vh;
+                /* transition-property: all/ transform, background-color;
+                transition-duration: 3s;
+                transition-timing-function: linear(0 0%, 0.16 47.94%, 0.77 83.24%, 1.05 37.65%);
+                transition-delay: 1s; */
+                transition: all 3s cubic-bezier(1, 0.36, 0, 0.59) 1s;
+
+			}
+			.translate {
+				transform: translateX(10vw) translateY(10vh) scale(2);
+                background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box translate"></div>
+		</div>
+	</body>
+</html>

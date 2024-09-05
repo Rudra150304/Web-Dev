@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: yellow;
+        } */
+         /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+         } */
+          /* .boxes :nth-child(even){
+            background-color: blue;
+          } */
+           /* .boxes :nth-last-child(1){
+            background-color: aqua;
+           } */
+            .boxes:before{
+               content:  "Rudra is good";
+               color: rgb(10, 198, 135);
+            }
+            .boxes:after{
+                content: "Very good";
+                color: rgb(222, 139, 16);
+            }
+            ::selection{
+                background-color: black;
+                color: aqua;
+            }
+            .box::first-letter{
+                color: rgb(240, 73, 240);
+            }
+            input::placeholder{
+                color: red;
+                font-size: 18px;
+            }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">I am first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Name">
+      </div>
+</body>
+</html>

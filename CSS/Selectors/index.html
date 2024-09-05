@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      /*Class selecotr*/
+      .red {
+        background-color: rgb(232, 79, 79);
+      }
+      /*ID selector*/
+      #green {
+        background-color: green;
+      }
+      /* Child Selector */
+      div > span {
+        color: blue;
+        background-color: yellow;
+      }
+      /* Descendent Selector */
+      div p {
+        color: rgb(135, 135, 243);
+        background-color: rgb(239, 239, 140);
+      }
+      /* Universal Selector */
+      * {
+        margin: 0;
+        padding: 1;
+      }
+      /* Pseudo Selectors */
+      a:visited {
+        color: gold;
+      }
+      a:link {
+        color: chartreuse;
+      }
+      a:active {
+        background-color: red;
+      }
+      a:hover{
+        background-color: blue;
+      }
+      p:first-child{
+        background-color: aqua;
+      }
+      /* Attribute Selector*/
+      [data-x=a]{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="one">
+      <p>First</p>
+      <p>Second</p>
+    </main>
+    <div>
+      <h1 data-x="a">X</h1>
+    </div>
+    <div class="red">
+      <span
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Architecto,ipsum.</span>
+      <article>
+        I am div
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+          cupiditate fuga expedita, possimus odio ipsa?
+        </p>
+      </article>
+    </div>
+    <div id="green">I am another div</div>
+    <a href="https://www.google.com">GOOGLE</a>
+    <a href="https://www.youtube.com">YOUTUBE</a>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Card.png</title>
+		<style>
+            body{
+                background-color: gray;
+                padding: 45px;
+                display: flex;
+            }
+            .card{
+                position: absolute;
+                left: 30vw;
+                align-self: auto;
+                height: 350px;
+                width: 300px;
+                border: 1px solid rgb(115, 115, 115);
+                border-radius: 10px;
+                margin: 120px;
+                padding: 10px;
+                background-color: white;
+            }
+            .img{
+                padding: 5px;
+                position:relative;
+                left: 18.5px;
+            }
+            .img img{
+                border-radius: 10px;
+            }
+            .capsules{
+                position: relative;
+                left: 35px;
+            }
+            #N{
+                position: relative;
+                left: 9px;
+                border: 0.7px solid rgb(115, 115, 115);
+                border-radius: 7px;
+                color: gray;
+            }
+            #L{
+                position: relative;
+                left: 25px;
+                border: 0.7px solid rgb(115, 115, 115);
+                border-radius: 10px;
+                color: gray;
+            }
+            .text p{
+                color: gray;
+            }
+            .button{
+                text-align: center;
+            }
+            .button button{
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: rgb(14, 150, 234);
+                background-color: rgb(216, 236, 253);
+                border-color: rgb(216, 236, 253);
+                font-size: 10px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .button button:hover{
+                background-color: rgb(194, 225, 246);
+                color: rgb(10, 136, 214);
+            }
+        </style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="img">
+				<img
+					width="250px" height="150px"
+					src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL2hpcHBvdW5pY29ybl9hX2Z1bGxfZmllcnlfZHJhZ29uX2hlYWRfb25fYmxhY2tfYmFja2dyb3VuZF9pbl90aF9lY2I5YTZlOS01N2ZkLTRjMDYtYjIwZS05N2U3ZTk0ZmQxNDYuanBn.jpg"
+					alt="dragon images" />
+			</div>
+			<div class="capsules">
+				<span id="N">Nature</span>
+				<span id="L">Lake</span>
+			</div>
+			<div class="text">
+                <h2>Lorem, ipsum dolor.</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ex soluta adipisci quo facere amet.
+				</p>
+			</div>
+			<div class="button">
+				<button>Read More</button>
+			</div>
+		</div>
+	</body>
+</html>

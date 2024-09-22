@@ -31,4 +31,4 @@ console.log(a);
 
 // clearTimeout(a);
 
-// clearTimeout(a);
+// clearinterval(a);
